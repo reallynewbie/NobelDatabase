@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="result" fx:id="resultsBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#paneClicked" onMouseEntered="#cursorChange" onMouseExited="#cursorRevert" prefHeight="60.0" prefWidth="624.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nobeldatabase.LaureateController">
+   <children>
+      <VBox fx:id="nameBox" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0">
+         <children>
+            <Label fx:id="labelName" alignment="CENTER" maxHeight="50.0" maxWidth="250.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" text="Name &lt;ID&gt;" textAlignment="CENTER" wrapText="true" VBox.vgrow="NEVER">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+      <GridPane prefHeight="50.0" prefWidth="428.0">
+         <children>
+            <Text fx:id="textCategory" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:  " wrappingWidth="213.13671875" />
+            <Text fx:id="textYear" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Won:  " wrappingWidth="214.13671875" GridPane.columnIndex="1" />
+            <Text fx:id="textGender" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:  " wrappingWidth="215.13671875" GridPane.columnIndex="2" />
+            <Text fx:id="textCountry" strokeType="OUTSIDE" strokeWidth="0.0" text="Country:  " wrappingWidth="345.13671875" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="293.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="100.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</HBox>
